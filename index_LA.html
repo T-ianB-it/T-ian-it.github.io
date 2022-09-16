@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="Examen de Módulo II, JS+OPT">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="author" content="Lavinia">
+	<meta name="copyright" content="Lavinia">
+
+	<!--HOJA DE ESTILO-->
+	<link rel="stylesheet" type="text/css" href="css/estilo_LA.css">
+
+	<!--JAVASCRIPT-->
+	<script src="js/validacion_LA.js"></script>
+
+</head>
+<body onload="foco()">
+	<h1>Alta de alumnos</h1>
+	<h2>Matrícula</h2>
+
+	<form id="container_form" action="#" method="get">
+		<p>Nombre *</p>
+		<input id="nombre" type="text" name="nom" tabindex="1" required placeholder="Stefani" maxlength="40" onkeypress="val_nombre()">
+
+		<p>Apellidos *</p>
+		<input id="apellidos" type="text" name="ape" tabindex="2" required placeholder="Germanotta Eilish" maxlength="40" onkeypress="val_apellido()">
+
+		<p>Edad *</p>
+		<input id="edad" type="text" name="ed" tabindex="3" required placeholder="23" onkeyup="val_edad()">
+
+		<p>Email *</p>
+		<input id="email" type="text" name="mail" tabindex="4" required placeholder="lavygermanotta@gmail.com" onkeyup="val_email()">
+
+		<p>Teléfono *</p>
+		<input id="telefono" type="text" name="tel" tabindex="5" required placeholder="Fijo o móvil" onkeyup="val_telefono()">
+
+		<p>Centro *</p>
+		<select required>
+			<option selected>Selecciona el centro de estudios</option>
+			<option>IES Josep Maria Llompart</option>
+			<option>IES Aurora Picornell</option>
+			<option>IES Antoni Maura</option>
+		</select>
+
+		<p>Curso *</p>
+		<div id="options_container">
+			<div>
+				<span><input type="radio" name="opc1" value="1" tabindex="7"> Primer curso</span>
+			</div>
+			<div>
+				<span><input type="radio" name="opc2" value="1" tabindex="8"> Segundo curso</span>
+			</div>
+			<div>
+				<span><input type="radio" name="opc3" value="1" tabindex="9"> Tercer curso</span>
+			<div>
+		</div>
+		<p>Año</p>
+		<input id="fecha" type="text" name="fec" tabindex="10" placeholder="2010" onkeyup="val_fecha()"><br>
+
+		<p>Observaciones</p>
+		<textarea id="observaciones" tabindex="11" placeholder="Escribe entre 1 y 121 caracteres" required minlength="1" maxlength="120" onkeyup="val_observaciones()"></textarea><br>
+		<p id="aviso"></p>
+
+		<span><input type="checkbox" name="terminos" required> Acepto los términos y las condiciones</span><br>
+
+		<input type="submit" name="envio_datos" value="ENVIAR" tabindex="11">
+	</form>
+
+</body>
+</html>

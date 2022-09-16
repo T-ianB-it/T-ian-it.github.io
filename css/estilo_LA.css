@@ -1,0 +1,105 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root
+{
+	--blanco: #FFF;
+	--negro: #000;
+	--morado: #9b4ec6;
+	--gris: #8d9da6;
+	--gris-clarito: #e1e1e1;
+	--azul:#5485e1;
+	--azul-baby: #d4e5ef;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,600&display=swap');
+
+body
+{
+	font-family: 'Playfair Display', serif;
+	margin: 10px 10%;
+}
+
+h1,h2,h3
+{
+	text-transform: uppercase;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+p
+{
+	font-size: 2.5ex;
+	text-align: center;
+	margin-bottom: 5px;
+}
+#container_form
+{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form
+{
+	margin-top: 50px;
+}
+textarea
+{
+	resize: none;
+	height: 150px;
+}
+textarea,input,select
+{
+	width: 300px;
+	padding: 1.5ex;
+	margin-bottom: 1rem;
+	border: 1px var(--gris-clarito) solid;
+	border-radius: 0.2rem;
+}
+input:focus, textarea:focus
+{
+	box-shadow: 0 0 5px var(--morado);
+}
+input[type="submit"]
+{
+	background-color: var(--morado);
+	color: var(--blanco);
+	font-weight: 600;
+	padding: 10px;
+}
+input[type="submit"]:hover
+{
+	opacity: 0.8;
+}
+input[type="radio"]
+{
+	width: 13px;
+	height: 13px;
+}
+input[type="checkbox"]
+{
+	width: 13px;
+	height: 13px;
+}
+button
+{
+	background-color: var(--azul);
+	color: var(--blanco);
+	font-weight: 600;
+	padding: 0.5rem;
+	border: 1px var(--gris) solid;
+	border-radius: 0.2rem;
+}
+button:hover
+{
+	opacity: 0.8;
+}
+input[type="submit"],input[type="radio"],input[type="checkbox"],select
+{
+	cursor: pointer;
+}
